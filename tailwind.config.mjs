@@ -6,10 +6,13 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      plus_jakarta: ['var(--font-plus-jakarta)', "sans-serif"],
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'primary': '#f97316',
+        'orange-light': '#fcf8f6'
       },
     },
   },
