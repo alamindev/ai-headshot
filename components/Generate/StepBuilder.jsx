@@ -1,4 +1,4 @@
-import ArrowLeft from "../Svgs/SearchImg";
+import ArrowLeft from "../Svgs/ArrowLeft";
 import StepOption from "./StepOption";
 
 export default function StepBuilder({
