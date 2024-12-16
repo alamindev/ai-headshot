@@ -1,6 +1,6 @@
 import Header from "@/components/Shared/Header";
 import { Plus_Jakarta_Sans } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 
 const  jakarta_Sans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",

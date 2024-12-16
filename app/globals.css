@@ -45,3 +45,28 @@
     transform: translate3d(calc(-20% + min(50vw, 1100px)), 0, 0);
   }
 }
+@keyframes bannermove {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-bannermove {
+  animation: bannermove 20s linear infinite;
+}
+
+@keyframes bannermove-1 {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.animate-bannermove-1 {
+  animation: bannermove-1 20s linear infinite;
+}

@@ -1,11 +1,15 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import PopupForm from "../PopupForm";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
   return (
-    <header className="flex bg-orange-light w-full items-center justify-between px-5 py-3 sticky top-0">
+    <header className="flex bg-orange-light w-full items-center justify-between px-5 py-3 sticky top-0 z-50">
+      {/* Popup Modal */}
+      <PopupForm isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <div className="flex gap-12 items-center">
@@ -75,17 +79,13 @@ export default function Header() {
           </div>
           <ul className="lg:flex hidden gap-6 items-center">
             <li>
-              <Link href={"#"} className="font-medium text-black">
-                Login
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"#"}
+              <button
+                type="button"
+                onClick={() => setIsPopupOpen(true)}
                 className="font-medium text-white inline-block px-6 py-3 rounded-xl bg-primary hover:bg-opacity-85 transition-all"
               >
                 Create your headshots now
-              </Link>
+              </button>
             </li>
           </ul>
           <button
