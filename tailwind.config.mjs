@@ -12,7 +12,7 @@ export default {
     extend: {
       colors: {
         'primary': '#f97316',
-        'orange-light': '#fcf8f6'
+        'orange-light': '#fbf1eb'
       },
       boxShadow: {
         '3xl': "rgba(0, 0, 0, 0.05) 0px -1px 20px 4px"

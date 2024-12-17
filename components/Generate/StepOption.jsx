@@ -2,7 +2,7 @@
 const StepOption = ({ option, onSelect, isSelected }) => {
   return (
     <label
-      className={`flex items-center shadow justify-between border rounded-lg p-4 gap-8 cursor-pointer transition-all ${
+      className={`flex items-center shadow  after:border after:border-gray-400 after:right-4 before:absolute before:rounded-full has-[:checked]:before:opacity-100 before:opacity-0 has-[:checked]:after:border-primary before:right-[19px] before:size-3.5 before:bg-primary after:size-5 after:rounded-full after:absolute relative justify-between border rounded-lg p-4 gap-8 cursor-pointer transition-all ${
         isSelected ? "border-orange-500 shadow-md" : "border-gray-300"
       }`}
     >
@@ -29,7 +29,7 @@ const StepOption = ({ option, onSelect, isSelected }) => {
         name="stepOption"
         checked={isSelected}
         onChange={() => onSelect(option.label)}
-        className="h-5 w-5 text-orange-500 focus:ring-orange-500 accent-primary"
+        className="h-5 w-5 text-orange-500 focus:ring-orange-500 accent-primary shrink-0 opacity-0"
       />
     </label>
   );

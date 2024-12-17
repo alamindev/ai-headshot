@@ -2,6 +2,7 @@
 import Header from "@/components/Generate/Header";
 import StepBuilder from "@/components/Generate/StepBuilder";
 import Welcome from "@/components/Generate/Welcome";
+import PopupForm from "@/components/PopupForm";
 import { useEffect, useState } from "react";
 const steps = [
     {
@@ -57,22 +58,46 @@ const steps = [
         ],
         default: 'East or Central Asian', // Default selected option
       },
+      {
+        question: "Image upload",
+        options: [], 
+      },
+      {
+        question: "Price popup",
+        options: [], 
+      },
+      {
+        question: "payment area",
+        options: [], 
+      },
   ];
   
-export default function page() {
+export default function Dashboardpage() {
     const [currentStep, setCurrentStep] = useState(0);
     const [isStepStart, setIsStepStart] = useState(false);
     const [selectedOptions, setSelectedOptions] = useState({});
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
+    const [storageData, setStorageData] = useState(true);
+   
   
-    // Set the default selected option for each step using the 'default' field
+  // Set the default selected option for each step using the 'default' field
     useEffect(() => {
+      if (typeof window !== "undefined") {
+        const localData = localStorage.getItem("userData"); 
+        if (!localData) {
+          setIsPopupOpen(true);
+          setStorageData(false)
+        }
+      }
+
+
         const defaultSelectedOptions = {};
         steps.forEach((step) => {
           defaultSelectedOptions[step.question] = step.options.find(option => option.label === step.default); // Find the default object
         });
         setSelectedOptions(defaultSelectedOptions);
       }, []);
-    
+     
       const handleOptionSelect = (label) => {
         const selectedOption = steps[currentStep].options.find(option => option.label === label);
         setSelectedOptions({
@@ -94,12 +119,12 @@ export default function page() {
       };
 
   return (
-      <div className="">
-          <Header currentStep={currentStep + 1} totalSteps={steps.length} />
+      <main className="">
+          <Header currentStep={currentStep + 1} isStepStart={isStepStart} totalSteps={steps.length} />
           {
               isStepStart ?  <StepBuilder setIsStepStart={setIsStepStart} setCurrentStep={setCurrentStep} steps={steps} selectedOptions={selectedOptions} currentStep={currentStep} handleOptionSelect={handleOptionSelect}  handleNextStep={handleNextStep}/> :  <Welcome setIsStepStart={setIsStepStart} />
           }
-        
-    </div>
+          <PopupForm storageData={storageData} isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
+    </main>
   )
 }
