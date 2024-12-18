@@ -21,8 +21,8 @@ export default function Welcome({ setIsStepStart }) {
   };
   return (
     <div>
-      <section className="px-4 py-12">
-        <div className="container mx-auto">
+      <section className="px-4 py-8 sm;py-12">
+        <div className="container mx-auto pb-28 sm:pb-24">
           <div className="max-w-[1280px] mx-auto">
             <div className="flex justify-start">
               <Link
@@ -46,11 +46,11 @@ export default function Welcome({ setIsStepStart }) {
                 <span> Back</span>
               </Link>
             </div>
-            <div className="flex gap-3 items-center justify-center flex-col pt-12 pb-2">
-              <h1 className="text-4xl font-bold text-center text-black">
+            <div className="flex gap-3 items-center justify-center flex-col pt-8 sm:pt-12 pb-2">
+              <h1 className="text-3xl sm:text-4xl font-bold text-center text-black">
                 Welcome to our AI Headshot Generator ✨
               </h1>
-              <p className="text-lg text-gray-900 font-medium text-center max-w-[576px] mx-auto">
+              <p className="text-sm sm:text-lg text-gray-900 font-medium text-center max-w-[576px] mx-auto">
                 Transform your existing photos into realistic AI headshots for
                 your resume, LinkedIn, and social media profiles.
               </p>
@@ -264,7 +264,7 @@ export default function Welcome({ setIsStepStart }) {
           </div>
         </div>
       </section>
-      <div className="w-full bg-white fixed bottom-0 py-6 shadow-3xl">
+      <div className="w-full bg-white fixed bottom-0 z-[99] px-4 py-3 sm:py-6 shadow-3xl">
         <div className="max-w-[750px] mx-auto space-y-4">
           <div
             className={`flex gap-2 items-center cursor-pointer ${

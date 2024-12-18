@@ -1,5 +1,62 @@
 import Image from "next/image";
 
+const leftArrs = [
+  { id: 1, url: "/images/1a.webp" },
+  { id: 2, url: "/images/2a.webp" },
+  { id: 3, url: "/images/3a.webp" },
+  { id: 4, url: "/images/4a.webp" },
+  { id: 5, url: "/images/5a.webp" },
+  { id: 6, url: "/images/6a.webp" },
+  { id: 7, url: "/images/7a.webp" },
+  { id: 8, url: "/images/8a.webp" },
+  { id: 9, url: "/images/9a.webp" },
+  { id: 10, url: "/images/10a.webp" },
+  { id: 11, url: "/images/11a.webp" },
+  { id: 12, url: "/images/12a.webp" },
+  { id: 13, url: "/images/13a.webp" },
+  { id: 14, url: "/images/1a.webp" },
+  { id: 15, url: "/images/2a.webp" },
+  { id: 16, url: "/images/3a.webp" },
+  { id: 17, url: "/images/4a.webp" },
+  { id: 18, url: "/images/5a.webp" },
+  { id: 19, url: "/images/6a.webp" },
+  { id: 20, url: "/images/7a.webp" },
+  { id: 21, url: "/images/8a.webp" },
+  { id: 22, url: "/images/9a.webp" },
+  { id: 23, url: "/images/10a.webp" },
+  { id: 24, url: "/images/11a.webp" },
+  { id: 25, url: "/images/12a.webp" },
+  { id: 26, url: "/images/13a.webp" },
+];
+const rightArrs = [
+  { id: 1, url: "/images/1b.webp" },
+  { id: 2, url: "/images/2b.webp" },
+  { id: 3, url: "/images/3b.webp" },
+  { id: 4, url: "/images/4b.webp" },
+  { id: 5, url: "/images/5b.webp" },
+  { id: 6, url: "/images/6b.webp" },
+  { id: 7, url: "/images/7b.webp" },
+  { id: 8, url: "/images/8b.webp" },
+  { id: 9, url: "/images/9b.webp" },
+  { id: 10, url: "/images/10b.webp" },
+  { id: 11, url: "/images/11b.webp" },
+  { id: 12, url: "/images/12b.webp" },
+  { id: 13, url: "/images/13b.webp" },
+  { id: 14, url: "/images/1b.webp" },
+  { id: 15, url: "/images/2b.webp" },
+  { id: 16, url: "/images/3b.webp" },
+  { id: 17, url: "/images/4b.webp" },
+  { id: 18, url: "/images/5b.webp" },
+  { id: 19, url: "/images/6b.webp" },
+  { id: 20, url: "/images/7b.webp" },
+  { id: 21, url: "/images/8b.webp" },
+  { id: 22, url: "/images/9b.webp" },
+  { id: 23, url: "/images/10b.webp" },
+  { id: 24, url: "/images/11b.webp" },
+  { id: 25, url: "/images/12b.webp" },
+  { id: 26, url: "/images/13b.webp" },
+];
+
 export default function Slider() {
   return (
     <div className="relative overflow-x-clip">
@@ -10,451 +67,37 @@ export default function Slider() {
           <div className="pointer-events-none absolute right-0 top-0 z-10 hidden h-full w-16 bg-gradient-to-l from-white min-[2200px]:block"></div>
           <div className="relative col-span-1 overflow-hidden">
             <div className="TransitionStrip_strip">
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/1a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="1a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/2a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="2a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/3a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="3a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/4a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="4a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/5a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="5a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/6a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="6a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/7a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="7a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/8a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="8a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/9a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="9a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/10a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="10a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/11a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="11a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/12a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="12a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/13a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="13a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/1a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="1a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/2a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="2a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/3a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="3a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/4a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="4a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/5a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="5a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/6a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="6a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/7a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="7a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/8a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="8a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/9a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="9a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/10a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="10a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/11a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="11a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/12a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="12a.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/13a.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="13a.webp"
-                  fill
-                />
-              </div>
+              {leftArrs.map((item) => (
+                <div
+                  key={item.id}
+                  className="relative aspect-[9.6/12] h-full py-1"
+                >
+                  <Image
+                    className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
+                    src={item.url}
+                    alt={`Image ${item.id}`}
+                    fill
+                  />
+                </div>
+              ))}
             </div>
           </div>
           <div className="absolute left-1/2 top-0 z-10 h-full w-3 -translate-x-1/2 rounded-sd border-2 border-orange-vibrant/20 bg-white transition-opacity md:w-3.5"></div>
           <div className="relative col-span-1 overflow-hidden">
-            <div className="TransitionStrip_strip">
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/5b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="5b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/6b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="6b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/7b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="7b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/8b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="8b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/9b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="9b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/10b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="10b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/11b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="11b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/12b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="12b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/13b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="13b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/1b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="1b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/2b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="2b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/3b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="3b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/4b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="4b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/5b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="5b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/6b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="6b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/7b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="7b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/8b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="8b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/9b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="9b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/10b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="10b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/13b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="13b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/8b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="8b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/9b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="9b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/10b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="10b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/11b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="11b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/13b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="13b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/13b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="13b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/13b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="13b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/13b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="13b.webp"
-                  fill
-                />
-              </div>
-              <div className="relative aspect-[9.6/12] h-full py-1">
-                <Image
-                  src={"/images/13b.webp"}
-                  className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
-                  alt="13b.webp"
-                  fill
-                />
-              </div>
+            <div className="TransitionStrip_strip TransitionStrip_right">
+              {rightArrs.map((item) => (
+                <div
+                  key={item.id}
+                  className="relative aspect-[9.6/12] h-full py-1"
+                >
+                  <Image
+                    className="hover:scale-105 transition-all duration-500 size-full rounded-xl border border-black/5 object-cover object-top sm:rounded-lg"
+                    src={item.url}
+                    alt={`Image ${item.id}`}
+                    fill
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>

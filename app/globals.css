@@ -70,3 +70,6 @@
 .animate-bannermove-1 {
   animation: bannermove-1 20s linear infinite;
 }
+.TransitionStrip_right {
+  margin-left: calc(max(-50vw, -1100px) + 8px);
+}

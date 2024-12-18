@@ -41,40 +41,6 @@ export default function Header() {
                   <path d="M18 6 6 18M6 6l12 12"></path>
                 </svg>
               </button>
-              <ul className="flex flex-col lg:flex-row gap-6 lg:gap-10 max-lg:pt-14 px-5">
-                <li>
-                  <Link
-                    href={"#"}
-                    className="text-base text-gray-700 font-medium"
-                  >
-                    Headshots
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href={"#"}
-                    className="text-base text-gray-700 font-medium"
-                  >
-                    For Teams
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href={"#"}
-                    className="text-base text-gray-700 font-medium"
-                  >
-                    Reviews
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href={"#"}
-                    className="text-base text-gray-700 font-medium"
-                  >
-                    Pricing
-                  </Link>
-                </li>
-              </ul>
             </nav>
           </div>
           <ul className="lg:flex hidden gap-6 items-center">

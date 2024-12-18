@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ReviewCard = () => {
   return (
-    <div className="  mx-auto bg-white  p-4 mt-10">
+    <div className="  mx-auto    p-4 mt-10">
       <div className="flex items-center mb-3">
         {/* Trustpilot Logo and Stars */}
         <h2 className="text-lg font-bold text-gray-900 mr-2">Trustpilot</h2>

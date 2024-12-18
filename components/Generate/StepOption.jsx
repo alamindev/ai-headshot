@@ -2,17 +2,21 @@
 const StepOption = ({ option, onSelect, isSelected }) => {
   return (
     <label
-      className={`flex items-center shadow  after:border after:border-gray-400 after:right-4 before:absolute before:rounded-full has-[:checked]:before:opacity-100 before:opacity-0 has-[:checked]:after:border-primary before:right-[19px] before:size-3.5 before:bg-primary after:size-5 after:rounded-full after:absolute relative justify-between border rounded-lg p-4 gap-8 cursor-pointer transition-all ${
+      className={`flex items-center shadow  after:border after:border-gray-400 after:right-4 before:absolute before:rounded-full has-[:checked]:before:opacity-100 before:opacity-0 has-[:checked]:after:border-primary before:right-[19px] before:size-3.5 before:bg-primary after:size-5 after:rounded-full after:absolute relative justify-between border rounded-lg p-3 sm:p-4 gap-8 cursor-pointer transition-all ${
         isSelected ? "border-orange-500 shadow-md" : "border-gray-300"
       }`}
     >
-      <div className="flex gap-4 items-center">
+      <div className="flex gap-2 sm:gap-4 items-center">
         {option.showImage && (
-          <img src={option.image} alt={option.label} className="w-8 h-8 " />
+          <img
+            src={option.image}
+            alt={option.label}
+            className="size-5 sm:size-8 "
+          />
         )}
         {option.showColor && !option.showImage && (
           <div
-            className="w-8 h-8 rounded-full mr-4 border border-gray-300"
+            className="size-5 sm:size-8 rounded-full mr-2 sm:mr-4 border border-gray-300"
             style={{ backgroundColor: option.color }}
           />
         )}

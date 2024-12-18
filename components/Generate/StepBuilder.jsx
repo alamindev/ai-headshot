@@ -61,7 +61,7 @@ export default function StepBuilder({
     <div>
       <section className="px-4 py-12">
         <div className="container mx-auto">
-          <div className="max-w-[1280px] mx-auto">
+          <div className="max-w-[1280px] mx-auto pb-20">
             <div className="flex justify-start">
               {currentStep === 0 ? (
                 <button
@@ -85,14 +85,14 @@ export default function StepBuilder({
             </div>
             {currentStep <= 3 && (
               <div>
-                <div className="flex gap-4 items-center justify-center flex-col pt-12 pb-10">
+                <div className="flex gap-4 items-center justify-center flex-col pt-8 sm:pt-12 pb-8 sm:pb-10">
                   <div className="size-7 text-base font-semibold flex justify-center items-center text-white rounded-full bg-primary">
                     {currentStep + 1}
                   </div>
-                  <h2 className="font-bold text-5xl text-gray-900 pb-2">
+                  <h2 className="font-bold text-3xl md:text-5xl text-gray-900 sm:pb-2">
                     {steps[currentStep].question}
                   </h2>
-                  <p className="text-lg text-gray-900 font-medium text-center  mx-auto">
+                  <p className="text-sm sm:text-lg text-gray-900 font-medium text-center  mx-auto">
                     Transform your existing photos into realistic AI headshots
                     for your resume, LinkedIn, and social media profiles.
                   </p>
@@ -101,8 +101,8 @@ export default function StepBuilder({
                   className={`${
                     currentStep === 2 || currentStep === 3
                       ? currentStep === 3
-                        ? "grid grid-cols-2 gap-5 max-w-[800px] mx-auto"
-                        : "grid grid-cols-3 gap-5 max-w-[650px] mx-auto"
+                        ? "grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-[800px] mx-auto"
+                        : "grid grid-cols-2 sm:grid-cols-3 gap-5 max-w-[650px] mx-auto"
                       : "flex items-center gap-5 flex-wrap justify-center"
                   }`}
                 >
@@ -181,7 +181,7 @@ export default function StepBuilder({
                       </div>
                     </div>
                   </div>
-                  <div className="xl:max-h-[500px] overflow-y-auto">
+                  <div className=" ">
                     <PhotoDisplay
                       photos={photos}
                       onDelete={handleDeletePhoto}
