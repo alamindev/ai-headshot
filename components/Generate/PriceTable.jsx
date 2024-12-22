@@ -46,7 +46,7 @@ export default function PricingTable({ setSelected, selected, setPrice }) {
   return (
     <div className="w-full">
       <div className="space-y-1">
-        <h1 className="text-4xl text-left font-bold  pb-3 ">
+        <h1 className="text-3xl sm:text-4xl text-left font-bold  pb-3 ">
           Amazing headshots are waiting for you!
         </h1>
         <h3 className="text-2xl font-medium">Select a package</h3>

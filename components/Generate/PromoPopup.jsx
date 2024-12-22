@@ -15,8 +15,8 @@ const PromoPopup = () => {
   return (
     <>
       {showPopup && (
-        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-[9999]">
-          <div className="relative bg-white  max-w-3xl rounded-3xl overflow-hidden shadow-lg">
+        <div className="fixed top-0 p-4 left-0 w-full h-full bg-black bg-opacity-50 overflow-y-auto flex items-start md:items-center justify-center z-[9999]">
+          <div className="relative bg-white max-w-3xl rounded-3xl overflow-hidden shadow-lg">
             <button
               className="absolute top-1 right-4 text-gray-600 hover:text-gray-900 text-2xl"
               onClick={() => setShowPopup(false)}
@@ -24,7 +24,7 @@ const PromoPopup = () => {
               &times;
             </button>
 
-            <div className="flex flex-col md:flex-row gap-6">
+            <div className="flex flex-col md:flex-row md:gap-6">
               {/* Left Section */}
               <div className="bg-black text-white pl-8 py-8 pr-4  ">
                 <h1 className="text-3xl font-bold mb-2 text-primary">
@@ -42,7 +42,7 @@ const PromoPopup = () => {
               </div>
 
               {/* Right Section */}
-              <div className="py-12 pr-6">
+              <div className="py-12 px-6 md:pr-6">
                 <h2 className="text-4xl font-bold">
                   Get <span className="text-green-600">10% off</span>
                 </h2>

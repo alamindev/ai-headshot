@@ -1,13 +1,13 @@
 // components/PhotoDisplay.js
 const PhotoDisplay = ({ photos, onDelete }) => {
   return (
-    <div className="flex flex-wrap gap-4">
+    <div className="grid grid-cols-2 md:flex md:flex-wrap gap-4">
       {photos.map((photo, index) => (
         <div key={photo.id} className="relative">
           <img
             src={photo.url}
             alt={`Uploaded ${index}`}
-            className="w-[190px] h-[220px] rounded-xl object-cover"
+            className="md:w-[190px] w-full max-md:h-[215px] md:h-[220px] rounded-xl object-cover"
           />
           <button
             onClick={() => onDelete(photo.id)}

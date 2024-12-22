@@ -168,11 +168,11 @@ export default function StepBuilder({
                         </span>
                       </div>
                       <div className="relative">
-                        <div className="absolute top-1/2 -mt-4 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-sm text-gray-700">
+                        <div className="absolute top-1/2 -ml-1 -mt-4  left-[60%] transform -translate-y-1/2 text-sm text-gray-700">
                           6
                         </div>
                         <div className="w-full h-2 bg-gray-200 rounded-full relative overflow-hidden">
-                          <div className="absolute top-0 left-1/2 -translate-x-1/2 h-2 w-[1px] bg-black rounded-full"></div>
+                          <div className="absolute top-0 left-[60%]  h-2 w-[1px] bg-black rounded-full"></div>
                           <div
                             className="absolute h-full top-0 left-0   bg-primary"
                             style={{ width: `${progress}%` }}
