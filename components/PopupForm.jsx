@@ -33,7 +33,7 @@ const PopupForm = ({ isOpen, onClose, storageData = true }) => {
       router.push("/generate");
       setTimeout(() => {
         onClose();
-      }, 1000); // Close the modal
+      }, 3000); // Close the modal
     }
   };
 
