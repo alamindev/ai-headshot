@@ -77,6 +77,7 @@ export default function Slider() {
                     src={item.url}
                     alt={`Image ${item.id}`}
                     fill
+                    loading="lazy"
                   />
                 </div>
               ))}
@@ -95,6 +96,7 @@ export default function Slider() {
                     src={item.url}
                     alt={`Image ${item.id}`}
                     fill
+                    loading="lazy"
                   />
                 </div>
               ))}

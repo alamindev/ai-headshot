@@ -282,17 +282,17 @@ export default function Welcome({ setIsStepStart }) {
             <label htmlFor="term" className="block text-sm cursor-pointer">
               I agree that I am the majority age 18/21+ years of age, and
               acknowledge the{" "}
-              <Link href={"#"} className="hover:opacity-80" rel="noreferrer">
+              <p rel="noreferrer">
                 <span className="cursor-pointer text-black underline">
                   terms
                 </span>
-              </Link>{" "}
+              </p>{" "}
               and{" "}
-              <Link href={"#"} className="hover:opacity-80" rel="noreferrer">
+              <p rel="noreferrer">
                 <span className="cursor-pointer text-black underline">
                   privacy policy
                 </span>
-              </Link>
+              </p>
             </label>
           </div>
           <div className="flex justify-center ">

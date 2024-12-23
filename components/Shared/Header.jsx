@@ -14,7 +14,7 @@ export default function Header() {
         <div className="flex justify-between items-center">
           <div className="flex gap-12 items-center">
             <Link href={"#"} className="font-bold text-black text-2xl">
-              HEADSHOT
+              HeadshotAI
             </Link>
             <nav
               className={`fixed z-40 lg:relative max-lg:shadow-lg right-0 top-0 bottom-0 transition-all duration-300 w-[320px] lg:w-auto bg-white lg:bg-transparent ${

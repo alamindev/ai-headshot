@@ -7,7 +7,7 @@ export default function Header({ currentStep, totalSteps, isStepStart }) {
       <div className="container mx-auto">
         <div className="flex justify-between items-center gap-4">
           <Link href={"/"} className="font-bold text-black text-2xl">
-            HEADSHOT
+            HeadshotAI
           </Link>
           {isStepStart && (
             <ProgressBar currentStep={currentStep} totalSteps={totalSteps} />

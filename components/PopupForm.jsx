@@ -94,7 +94,7 @@ const PopupForm = ({ isOpen, onClose, storageData = true }) => {
               <h1 className="pb-6 md:block hidden ">
                 {" "}
                 <Link href={"#"} className="font-bold text-black text-2xl">
-                  HEADSHOT
+                  HeadshotAI
                 </Link>
               </h1>
               <div className="mb-4">
@@ -133,9 +133,9 @@ const PopupForm = ({ isOpen, onClose, storageData = true }) => {
               </button>
               <div class="mt-5 w-full text-[#646664] max-w-[460px] text-xs leading-relaxed text-darkGrayNew md:text-sm">
                 New accounts are subject to our&nbsp;
-                <span class="cursor-pointer underline">Terms</span>
+                <span class="   ">Terms</span>
                 &nbsp;and&nbsp;
-                <span class="cursor-pointer underline">Privacy Policy</span>.
+                <span class="  ">Privacy Policy</span>.
               </div>
               <div class="mt-8 flex w-full max-w-[460px] flex-col items-start justify-start gap-2 text-[13px] font-bold leading-5 tracking-wide text-[#646664]">
                 <div class="flex items-center gap-2">
