@@ -77,6 +77,7 @@ export default function Slider() {
                     src={item.url}
                     alt={`Image ${item.id}`}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     loading="lazy"
                   />
                 </div>
@@ -96,6 +97,7 @@ export default function Slider() {
                     src={item.url}
                     alt={`Image ${item.id}`}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     loading="lazy"
                   />
                 </div>
