@@ -84,7 +84,7 @@ const PopupForm = ({ isOpen, onClose, storageData = true }) => {
               <h1 className="pb-6 md:hidden block ">
                 {" "}
                 <Link href={"#"} className="font-bold text-black text-2xl">
-                  HEADSHOT
+                  HeadshotAI
                 </Link>
               </h1>
               <h3 className="text-left  font-bold text-3xl xl:text-5xl xl:hidden leading-tight max-md:pt-4 pb-8 md:pb-4">

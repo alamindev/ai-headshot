@@ -281,18 +281,7 @@ export default function Welcome({ setIsStepStart }) {
             />
             <label htmlFor="term" className="block text-sm cursor-pointer">
               I agree that I am the majority age 18/21+ years of age, and
-              acknowledge the{" "}
-              <p rel="noreferrer">
-                <span className="cursor-pointer text-black underline">
-                  terms
-                </span>
-              </p>{" "}
-              and{" "}
-              <p rel="noreferrer">
-                <span className="cursor-pointer text-black underline">
-                  privacy policy
-                </span>
-              </p>
+              acknowledge the terms and privacy policy
             </label>
           </div>
           <div className="flex justify-center ">

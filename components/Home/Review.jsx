@@ -129,12 +129,7 @@ export default function Review() {
         </div>
         <div className="relative">
           <div className="scrollbar-hide flex size-full items-stretch gap-4 overflow-x-auto py-4 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              className="flex w-[300px] shrink-0 flex-col justify-between rounded-xl border border-[#A6A6A64D] bg-white p-6 shadow-review-card md:w-full"
-              href="https://www.trustpilot.com/reviews/675fe13d0cfd073f17e5aa27"
-            >
+            <div className="flex w-[300px] shrink-0 flex-col justify-between rounded-xl border border-[#A6A6A64D] bg-white p-6 shadow-review-card md:w-full">
               <div>
                 <div className="flex flex-row items-center justify-between gap-y-2 md:flex-col md:items-start lg:flex-row lg:items-center">
                   <div className="flex items-center justify-center gap-0.5">
@@ -195,13 +190,8 @@ export default function Review() {
                 </svg>
                 <div className="text-sm font-bold">Gonca Üstün</div>
               </div>
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              className="flex w-[300px] shrink-0 flex-col justify-between rounded-xl border border-[#A6A6A64D] bg-white p-6 shadow-review-card md:w-full"
-              href="https://www.trustpilot.com/reviews/675fab370d98be86aae3edfa"
-            >
+            </div>
+            <div className="flex w-[300px] shrink-0 flex-col justify-between rounded-xl border border-[#A6A6A64D] bg-white p-6 shadow-review-card md:w-full">
               <div>
                 <div className="flex flex-row items-center justify-between gap-y-2 md:flex-col md:items-start lg:flex-row lg:items-center">
                   <div className="flex items-center justify-center gap-0.5">
@@ -264,13 +254,8 @@ export default function Review() {
                 </svg>
                 <div className="text-sm font-bold">Wes Freezeland</div>
               </div>
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              className="flex w-[300px] shrink-0 flex-col justify-between rounded-xl border border-[#A6A6A64D] bg-white p-6 shadow-review-card md:w-full"
-              href="https://www.trustpilot.com/reviews/675ecb5ae70849e4c3dec02d"
-            >
+            </div>
+            <div className="flex w-[300px] shrink-0 flex-col justify-between rounded-xl border border-[#A6A6A64D] bg-white p-6 shadow-review-card md:w-full">
               <div>
                 <div className="flex flex-row items-center justify-between gap-y-2 md:flex-col md:items-start lg:flex-row lg:items-center">
                   <div className="flex items-center justify-center gap-0.5">
@@ -331,13 +316,8 @@ export default function Review() {
                 </svg>
                 <div className="text-sm font-bold">Guy</div>
               </div>
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              className="flex w-[300px] shrink-0 flex-col justify-between rounded-xl border border-[#A6A6A64D] bg-white p-6 shadow-review-card md:w-full"
-              href="https://www.trustpilot.com/reviews/675eaa797c8cc1540d1bab72"
-            >
+            </div>
+            <div className="flex w-[300px] shrink-0 flex-col justify-between rounded-xl border border-[#A6A6A64D] bg-white p-6 shadow-review-card md:w-full">
               <div>
                 <div className="flex flex-row items-center justify-between gap-y-2 md:flex-col md:items-start lg:flex-row lg:items-center">
                   <div className="flex items-center justify-center gap-0.5">
@@ -404,13 +384,8 @@ export default function Review() {
                 </svg>
                 <div className="text-sm font-bold">Alex</div>
               </div>
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              className="flex w-[300px] shrink-0 flex-col justify-between rounded-xl border border-[#A6A6A64D] bg-white p-6 shadow-review-card md:w-full"
-              href="https://www.trustpilot.com/reviews/675e7bbeccdb4ba0aea5158f"
-            >
+            </div>
+            <div className="flex w-[300px] shrink-0 flex-col justify-between rounded-xl border border-[#A6A6A64D] bg-white p-6 shadow-review-card md:w-full">
               <div>
                 <div className="flex flex-row items-center justify-between gap-y-2 md:flex-col md:items-start lg:flex-row lg:items-center">
                   <div className="flex items-center justify-center gap-0.5">
@@ -474,13 +449,8 @@ export default function Review() {
                 </svg>
                 <div className="text-sm font-bold">Adam L</div>
               </div>
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              className="flex w-[300px] shrink-0 flex-col justify-between rounded-xl border border-[#A6A6A64D] bg-white p-6 shadow-review-card md:w-full"
-              href="https://www.trustpilot.com/reviews/675e5ce72bcfea4aa591a403"
-            >
+            </div>
+            <div className="flex w-[300px] shrink-0 flex-col justify-between rounded-xl border border-[#A6A6A64D] bg-white p-6 shadow-review-card md:w-full">
               <div>
                 <div className="flex flex-row items-center justify-between gap-y-2 md:flex-col md:items-start lg:flex-row lg:items-center">
                   <div className="flex items-center justify-center gap-0.5">
@@ -541,13 +511,8 @@ export default function Review() {
                 </svg>
                 <div className="text-sm font-bold">Denis Goncharov</div>
               </div>
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              className="flex w-[300px] shrink-0 flex-col justify-between rounded-xl border border-[#A6A6A64D] bg-white p-6 shadow-review-card md:w-full"
-              href="https://www.trustpilot.com/reviews/675e367785462c117b8738b3"
-            >
+            </div>
+            <div className="flex w-[300px] shrink-0 flex-col justify-between rounded-xl border border-[#A6A6A64D] bg-white p-6 shadow-review-card md:w-full">
               <div>
                 <div className="flex flex-row items-center justify-between gap-y-2 md:flex-col md:items-start lg:flex-row lg:items-center">
                   <div className="flex items-center justify-center gap-0.5">
@@ -608,13 +573,8 @@ export default function Review() {
                 </svg>
                 <div className="text-sm font-bold">aaron</div>
               </div>
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              className="flex w-[300px] shrink-0 flex-col justify-between rounded-xl border border-[#A6A6A64D] bg-white p-6 shadow-review-card md:w-full"
-              href="https://www.trustpilot.com/reviews/675da2163e3821daff4a3667"
-            >
+            </div>
+            <div className="flex w-[300px] shrink-0 flex-col justify-between rounded-xl border border-[#A6A6A64D] bg-white p-6 shadow-review-card md:w-full">
               <div>
                 <div className="flex flex-row items-center justify-between gap-y-2 md:flex-col md:items-start lg:flex-row lg:items-center">
                   <div className="flex items-center justify-center gap-0.5">
@@ -675,7 +635,7 @@ export default function Review() {
                 </svg>
                 <div className="text-sm font-bold">Amber Hogan</div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </div>

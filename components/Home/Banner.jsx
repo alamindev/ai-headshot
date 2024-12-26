@@ -1,7 +1,6 @@
 "use client";
 import starGradient from "@/public/images/headerGradientStar.webp";
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import PopupForm from "../PopupForm";
 import Slider from "./Slider";
@@ -46,24 +45,20 @@ export default function Banner() {
                 </svg>
               </button>
               <div className="flex gap-5 items-center max-w-[500px]">
-                <Link href={"#"}>
-                  <Image
-                    src={"/images/google-review.png"}
-                    alt="google"
-                    width={295}
-                    height={35}
-                    className="h-10 object-contain"
-                  />
-                </Link>
-                <Link href={"#"}>
-                  <Image
-                    src={"/images/trustpilot.png"}
-                    alt="google"
-                    width={295}
-                    height={30}
-                    className="h-8 object-contain"
-                  />
-                </Link>
+                <Image
+                  src={"/images/google-review.png"}
+                  alt="google"
+                  width={295}
+                  height={30}
+                  className="h-8 object-contain"
+                />
+                <Image
+                  src={"/images/trustpilot.png"}
+                  alt="google"
+                  width={295}
+                  height={30}
+                  className="h-8 object-contain"
+                />
               </div>
             </div>
           </div>

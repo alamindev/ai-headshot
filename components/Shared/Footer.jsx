@@ -20,7 +20,7 @@ export default function Footer() {
             <div className="mt-6 ">
               <div className=" ">
                 <p className="text-center">
-                  Copyright © 2024 HEADSHOT AI, Inc. All rights reserved.
+                  Copyright © HEADSHOT AI, Inc. All rights reserved.
                 </p>
               </div>
             </div>
